@@ -8,11 +8,11 @@ body {
 }
 
 header {
-  background: linear-gradient(135deg, #2c3e50, #1a252f);
-  color: #ecf0f1;
+  background: linear-gradient(135deg, #1e40af, #1e3a8a);
+  color: #f0f9ff;
   padding: 4rem 2rem;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 header .profile {
@@ -35,11 +35,12 @@ header .profile img {
   margin-top: 1.5rem;
   font-size: 3rem;
   font-weight: 700;
-  background: linear-gradient(90deg, #3498db, #2ecc71);
+  background: linear-gradient(90deg, #60a5fa, #3b82f6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .profile p {
@@ -99,7 +100,7 @@ header #theme-toggle:hover {
 }
 
 nav {
-  background: #34495e;
+  background: #1e3a8a;
   display: flex;
   justify-content: center;
   padding: 1.2rem;
@@ -107,11 +108,11 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
 
 nav a {
-  color: #ecf0f1;
+  color: #f0f9ff;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
@@ -122,7 +123,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #3498db;
+  color: #93c5fd;
 }
 
 nav a::after {
@@ -132,7 +133,7 @@ nav a::after {
   height: 2px;
   bottom: 0;
   left: 50%;
-  background-color: #3498db;
+  background-color: #93c5fd;
   transition: all 0.3s ease;
 }
 
@@ -148,12 +149,13 @@ section {
   max-width: 900px;
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  border-top: 4px solid #3b82f6;
 }
 
 h2 {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: #1e3a8a;
   margin-bottom: 1.5rem;
   position: relative;
   display: inline-block;
@@ -166,9 +168,16 @@ h2::after {
   position: absolute;
   width: 60px;
   height: 3px;
-  background: #3498db;
+  background: #3b82f6;
   bottom: 0;
   left: 0;
+}
+
+h3 {
+  color: #2563eb;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 section#skills p {
@@ -248,18 +257,16 @@ section#skills strong {
 
 .project {
   background-color: white;
-  border: none;
-  border-radius: 12px;
-  padding: 25px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
+  border: 1px solid #f0f4f8;
 }
 
 .project:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .project-img {
@@ -271,9 +278,9 @@ section#skills strong {
 }
 
 .project h3 {
-  color: #2c3e50;
-  margin-top: 0;
   font-size: 1.4rem;
+  margin: 1.2rem 1rem 0.8rem;
+  color: #1e3a8a;
 }
 
 .project p {
@@ -374,25 +381,22 @@ footer {
 }
 
 .dark-mode {
-  background-color: #121212;
-  color: #f0f0f0;
+  background: #0f172a;
+  color: #e2e8f0;
 }
 
 .dark-mode section {
-  background: #1e1e1e;
+  background: #1e293b;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  border-top: 4px solid #3b82f6;
 }
 
 .dark-mode h2 {
-  color: #e0e0e0;
+  color: #f0f9ff;
 }
 
-.dark-mode header {
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
-}
-
-.dark-mode nav {
-  background: #16213e;
+.dark-mode h3 {
+  color: #93c5fd;
 }
 
 .dark-mode .timeline-content,
@@ -421,6 +425,12 @@ footer {
 
 .dark-mode footer {
   background: #1a1a2e;
+}
+
+.dark-mode .skill-category {
+  color: #93c5fd;
+  background-color: rgba(59, 130, 246, 0.1);
+  border-left: 4px solid #3b82f6;
 }
 
 @media (max-width: 768px) {
@@ -469,13 +479,15 @@ footer {
 
 /* Skill categories */
 .skill-category {
-  font-size: 1.3rem;
-  color: #2c3e50;
-  margin-top: 1.5rem;
-  margin-bottom: 0.8rem;
+  color: #2563eb;
+  font-size: 1.4rem;
   font-weight: 600;
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  border-left: 4px solid #3b82f6;
+  padding-left: 1rem;
+  background-color: rgba(59, 130, 246, 0.05);
+  padding: 0.5rem 1rem;
+  border-radius: 0 6px 6px 0;
 }
 
 /* Experience section */
@@ -544,11 +556,6 @@ footer {
 }
 
 /* Dark mode additions */
-.dark-mode .skill-category {
-  color: #e0e0e0;
-  border-bottom-color: #444;
-}
-
 .dark-mode .tech-tag {
   background-color: rgba(52, 152, 219, 0.2);
 }
