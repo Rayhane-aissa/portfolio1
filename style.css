@@ -8,8 +8,8 @@ body {
 }
 
 header {
-  background: linear-gradient(135deg, #1e40af, #1e3a8a);
-  color: #f0f9ff;
+  background: linear-gradient(135deg, #8e44ad, #3a1c71);
+  color: #f8f9fa;
   padding: 4rem 2rem;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -35,7 +35,7 @@ header .profile img {
   margin-top: 1.5rem;
   font-size: 3rem;
   font-weight: 700;
-  background: linear-gradient(90deg, #60a5fa, #3b82f6);
+  background: linear-gradient(90deg, #f3a953, #e74c3c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -62,17 +62,17 @@ header .profile p {
   font-weight: 600;
   border-radius: 30px;
   text-decoration: none;
-  background-color: #3498db;
+  background-color: #e74c3c;
   color: #fff;
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
-  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+  box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);
 }
 
 .cv-buttons .cv-link:hover {
-  background-color: #2980b9;
+  background-color: #c0392b;
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(52, 152, 219, 0.4);
+  box-shadow: 0 6px 15px rgba(231, 76, 60, 0.4);
 }
 
 header #theme-toggle {
@@ -100,7 +100,7 @@ header #theme-toggle:hover {
 }
 
 nav {
-  background: #1e3a8a;
+  background: #4a235a;
   display: flex;
   justify-content: center;
   padding: 1.2rem;
@@ -112,7 +112,7 @@ nav {
 }
 
 nav a {
-  color: #f0f9ff;
+  color: #f8f9fa;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
@@ -123,7 +123,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #93c5fd;
+  color: #f9a825;
 }
 
 nav a::after {
@@ -133,7 +133,7 @@ nav a::after {
   height: 2px;
   bottom: 0;
   left: 50%;
-  background-color: #93c5fd;
+  background-color: #f9a825;
   transition: all 0.3s ease;
 }
 
@@ -149,13 +149,16 @@ section {
   max-width: 900px;
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  border-top: 4px solid #3b82f6;
+  border-top: 4px solid transparent;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #8e44ad, #f3a953);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 h2 {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #1e3a8a;
+  color: #5a189a;
   margin-bottom: 1.5rem;
   position: relative;
   display: inline-block;
@@ -168,13 +171,13 @@ h2::after {
   position: absolute;
   width: 60px;
   height: 3px;
-  background: #3b82f6;
+  background: #7209b7;
   bottom: 0;
   left: 0;
 }
 
 h3 {
-  color: #2563eb;
+  color: #7209b7;
   font-weight: 600;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
@@ -186,7 +189,7 @@ section#skills p {
   padding: 0.8rem;
   background: #f8f9fa;
   border-radius: 6px;
-  border-left: 3px solid #3498db;
+  border-left: 3px solid #9d4edd;
 }
 
 section#skills strong {
@@ -204,7 +207,7 @@ section#skills strong {
   content: '';
   position: absolute;
   width: 3px;
-  background-color: #3498db;
+  background-color: #9d4edd;
   top: 0;
   bottom: 0;
   left: 30px;
@@ -223,7 +226,7 @@ section#skills strong {
   width: 16px;
   height: 16px;
   background-color: white;
-  border: 3px solid #3498db;
+  border: 3px solid #7209b7;
   top: 15px;
   left: 22px;
   border-radius: 50%;
@@ -232,7 +235,7 @@ section#skills strong {
 
 .timeline-date {
   font-weight: 700;
-  color: #3498db;
+  color: #7209b7;
   margin-bottom: 5px;
 }
 
@@ -280,7 +283,7 @@ section#skills strong {
 .project h3 {
   font-size: 1.4rem;
   margin: 1.2rem 1rem 0.8rem;
-  color: #1e3a8a;
+  color: #5a189a;
 }
 
 .project p {
@@ -291,20 +294,20 @@ section#skills strong {
 .project a {
   display: inline-block;
   padding: 0.7rem 1.5rem;
-  background: #3498db;
+  background: #e74c3c;
   color: white;
   text-decoration: none;
   border-radius: 30px;
   font-weight: 600;
   transition: all 0.3s ease;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.2);
+  box-shadow: 0 4px 10px rgba(231, 76, 60, 0.2);
 }
 
 .project a:hover {
-  background: #2980b9;
+  background: #c0392b;
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(52, 152, 219, 0.3);
+  box-shadow: 0 6px 15px rgba(231, 76, 60, 0.3);
 }
 
 .contact-form {
@@ -327,12 +330,12 @@ section#skills strong {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #3498db;
-  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  border-color: #9d4edd;
+  box-shadow: 0 0 0 2px rgba(157, 78, 221, 0.2);
 }
 
 .contact-form button {
-  background: #3498db;
+  background: #7209b7;
   color: white;
   padding: 0.9rem 2.5rem;
   border: none;
@@ -341,13 +344,13 @@ section#skills strong {
   font-weight: 600;
   font-size: 1rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+  box-shadow: 0 4px 10px rgba(114, 9, 183, 0.3);
 }
 
 .contact-form button:hover {
-  background: #2980b9;
+  background: #5a189a;
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(52, 152, 219, 0.4);
+  box-shadow: 0 6px 15px rgba(114, 9, 183, 0.4);
 }
 
 .contact-links {
@@ -369,14 +372,14 @@ section#skills strong {
 }
 
 .contact-links a:hover {
-  color: #3498db;
+  color: #7209b7;
 }
 
 footer {
   text-align: center;
   padding: 2rem;
-  background: #2c3e50;
-  color: #ecf0f1;
+  background: #3a1c71;
+  color: #f8f9fa;
   margin-top: 2rem;
 }
 
@@ -388,7 +391,10 @@ footer {
 .dark-mode section {
   background: #1e293b;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-  border-top: 4px solid #3b82f6;
+  border-top: 4px solid transparent;
+  background-image: linear-gradient(#1e293b, #1e293b), linear-gradient(90deg, #7209b7, #f3a953);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 .dark-mode h2 {
@@ -396,7 +402,7 @@ footer {
 }
 
 .dark-mode h3 {
-  color: #93c5fd;
+  color: #c77dff;
 }
 
 .dark-mode .timeline-content,
@@ -428,9 +434,14 @@ footer {
 }
 
 .dark-mode .skill-category {
-  color: #93c5fd;
-  background-color: rgba(59, 130, 246, 0.1);
-  border-left: 4px solid #3b82f6;
+  color: #c77dff;
+  background-color: rgba(157, 78, 221, 0.1);
+  border-left: 4px solid #9d4edd;
+}
+
+.dark-mode .tech-tag {
+  background-color: rgba(157, 78, 221, 0.2);
+  color: #c77dff;
 }
 
 @media (max-width: 768px) {
@@ -479,13 +490,13 @@ footer {
 
 /* Skill categories */
 .skill-category {
-  color: #2563eb;
+  color: #7209b7;
   font-size: 1.4rem;
   font-weight: 600;
   margin-top: 2rem;
-  border-left: 4px solid #3b82f6;
+  border-left: 4px solid #9d4edd;
   padding-left: 1rem;
-  background-color: rgba(59, 130, 246, 0.05);
+  background-color: rgba(157, 78, 221, 0.05);
   padding: 0.5rem 1rem;
   border-radius: 0 6px 6px 0;
 }
@@ -510,8 +521,8 @@ footer {
 }
 
 .tech-tag {
-  background-color: rgba(52, 152, 219, 0.1);
-  color: #3498db;
+  background-color: rgba(157, 78, 221, 0.1);
+  color: #7209b7;
   padding: 0.3rem 0.8rem;
   border-radius: 30px;
   font-size: 0.85rem;
@@ -557,7 +568,7 @@ footer {
 
 /* Dark mode additions */
 .dark-mode .tech-tag {
-  background-color: rgba(52, 152, 219, 0.2);
+  background-color: rgba(157, 78, 221, 0.2);
 }
 
 .dark-mode .form-group label {
@@ -592,7 +603,7 @@ body::before {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: linear-gradient(315deg, rgba(52, 152, 219, 0.03) 0%, rgba(46, 204, 113, 0.03) 100%);
+  background: linear-gradient(315deg, rgba(157, 78, 221, 0.03) 0%, rgba(240, 147, 43, 0.03) 100%);
   pointer-events: none;
   animation: gradientBG 15s ease infinite;
   background-size: 400% 400%;
